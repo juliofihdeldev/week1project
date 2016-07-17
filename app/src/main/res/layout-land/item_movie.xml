@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivMovieImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_alignBottom="@+id/tvOverview"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="The Legend of Tarzan"
+        android:paddingBottom="10dp"
+        android:id="@+id/tvTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivMovieImage"
+        android:layout_toEndOf="@+id/ivMovieImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text=" reunites Dory with friends Nemo and Marlin on a search for answers about her past. What can she remember? Who are her parents? And where did she learn to speak Whale"
+        android:id="@+id/tvOverview"
+        android:maxLines="6"
+        android:ellipsize="end"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toRightOf="@+id/ivMovieImage"
+        android:layout_toEndOf="@+id/ivMovieImage"
+        android:text="ivmovieimage" />
+</RelativeLayout>
