@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.juliodev.flicksdev">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/youtube_play_100px"
+        android:icon="@drawable/ic_action_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MovieActivity">
+        <activity android:name=".MovieActivity"></activity>
+        <activity android:name=".Splash" />
+        <activity android:name=".DetailsMovie" android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Splash">
-
-        </activity>
+        <activity
+            android:name=".Drawer"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
