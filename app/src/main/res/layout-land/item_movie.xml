@@ -1,40 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView
-        android:layout_width="240dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@color/colorAccent"
+    android:padding="4dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ivMovieImage"
+        android:layout_alignRight="@+id/ivMovieImage"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp" />
+
+    <ImageView
         android:id="@+id/ivMovieImage"
-        android:layout_alignParentTop="true"
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginRight="10dp"
-        tools:src="@mipmap/ic_launcher"
-        android:layout_alignBottom="@+id/tvOverview"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:text="The Legend of Tarzan"
-        android:paddingBottom="10dp"
-        android:id="@+id/tvTitle"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/ivMovieImage"
-        android:layout_toEndOf="@+id/ivMovieImage" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher" />
 
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text=" reunites Dory with friends Nemo and Marlin on a search for answers about her past. What can she remember? Who are her parents? And where did she learn to speak Whale"
-        android:id="@+id/tvOverview"
-        android:maxLines="6"
-        android:ellipsize="end"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@+id/tvTitle"
-        android:layout_toRightOf="@+id/ivMovieImage"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
         android:layout_toEndOf="@+id/ivMovieImage"
-        android:text="ivmovieimage" />
+        android:layout_toRightOf="@+id/ivMovieImage"
+        android:paddingBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        tools:text="The Legend of Tarzan" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/ivMovieImage"
+        android:layout_toRightOf="@+id/ivMovieImage"
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:text="ivmovieimage"
+        android:textColor="#fff"
+        tools:text=" reunites Dory with friends Nemo and Marlin on a search for answers about her past. What can she remember? Who are her parents? And where did she learn to speak Whale" />
+
 </RelativeLayout>
